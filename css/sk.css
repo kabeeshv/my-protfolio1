@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  background: #0f0f0f;
+  font-family: Poppins, sans-serif;
+  color: #fff;
+}
+
+.skills {
+  padding: 60px;
+  text-align: center;
+}
+
+.skills h2 {
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.skill-box {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  background: #151515;
+  padding: 30px 15px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, .6);
+}
+
+.card i {
+  font-size: 70px;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* COLORS */
+.html .circle {
+  background: conic-gradient(#ff5c5c 0% 95%, #333 95%);
+}
+
+.css .circle {
+  background: conic-gradient(#4da6ff 0% 95%, #333 95%);
+}
+
+.js .circle {
+  background: conic-gradient(#f9d423 0% 65%, #333 65%);
+}
+
+.java .circle {
+  background: conic-gradient(#DAA520 0% 70%, #333 70%);
+}
+
+.mysql .circle {
+  background: conic-gradient(#008000 0% 90%, #333 90%);
+}
+
+.react .circle {
+  background: conic-gradient(#778899 0% 60%, #333 60%);
+}
+
+.circle span {
+  background: #151515;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: block;
+  margin: 60px auto 90px auto;
+  width: fit-content;
+  padding: 10px 18px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  transition: .3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #ff0066;
+}
+
+@media screen and (max-width: 768px) {
+  .skill-box {
+    gap: 20px;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .btn {
+    margin: 40px auto;
+    display: block;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+
+  .skills {
+    padding: 40px 20px;
+  }
+}

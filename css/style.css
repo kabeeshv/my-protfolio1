@@ -1,0 +1,239 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.main {
+	width: 100%;
+	background-image: url("../images/mou.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	font-family: sans-serif;
+}
+
+.navbar {
+	width: 86%;
+	display: flex;
+	margin: auto;
+	padding: 15px 0;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 600;
+	color: #fff;
+	position: relative;
+	padding: 4px 0;
+	transition: .3s;
+}
+
+
+.navbar ul li a:hover {
+	color: #ff0000;
+}
+
+
+.navbar ul li a::after {
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background: #fff;
+	left: 0;
+	bottom: 0;
+	transition: .3s;
+}
+
+.navbar ul li a:hover::after {
+	width: 100%;
+}
+
+
+.navbar .logo {
+	width: 360px;
+	height: 250px;
+	cursor: pointer;
+	margin: 10px 10px 0px 0px;
+}
+
+
+
+ul {
+	margin: 40px 0px 70px 0px;
+	color: white;
+}
+
+ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 10px 16px;
+}
+
+ul li a {
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	color: darkslategray;
+	margin: 40px 10px 40px 30px;
+}
+
+ul li a:hover {
+	color: rgb(60, 60, 60);
+}
+
+.info {
+	margin: 10px 0px 90px 70px;
+}
+
+.info h1 {
+	font-size: 65px;
+	color: #b4b4b4;
+}
+
+.info h3 {
+	font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 24px;
+	color: #f9f9f9;
+}
+
+.info span {
+	color: #ff0000;
+}
+
+button {
+	display: inline-block;
+	margin: 2px 50px 10px 170px;
+	padding: 10px 18px;
+	background: #fff;
+	color: #000;
+	text-decoration: none;
+	border-radius: 30px;
+	font-weight: bold;
+	margin-bottom: 25px;
+	transition: .3s;
+}
+
+button:hover {
+	transform: scale(1.05);
+	background: #ff0066;
+}
+
+.icons a {
+	color: #fff;
+	font-size: 40px;
+	position: relative;
+	top: 70px;
+	margin-left: 80px;
+	gap: 15px;
+	transition: .3s;
+}
+
+.icons a:hover {
+	color: #ff0066;
+}
+
+.image {
+	width: 35%;
+	height: 50%;
+	position: absolute;
+	right: 100px;
+	bottom: 0;
+}
+
+.image img {
+	position: absolute;
+	height: 140%;
+	left: 40%;
+	transform: translate(-55%);
+	bottom: 0;
+	transition: left 2s ease;
+	animation: float 3s ease-in-out infinite;
+}
+
+.image:hover {
+	left: 55%;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar {
+		flex-direction: column;
+		width: 100%;
+		padding: 10px 0;
+	}
+
+	.navbar .logo {
+		margin: 0;
+		height: 100px;
+		/* Smaller logo for tablet */
+		width: auto;
+	}
+
+	ul {
+		margin: 20px 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	ul li {
+		display: block;
+		/* Stack menu items */
+		margin: 10px 0;
+		padding: 5px 0;
+	}
+
+	ul li a {
+		margin: 0;
+		font-size: 18px;
+	}
+
+	.info {
+		margin: 20px;
+		text-align: center;
+		/* Center content */
+	}
+
+	.info h1 {
+		font-size: 40px;
+	}
+
+	.info h3 {
+		font-size: 16px;
+	}
+
+	button {
+		margin: 20px auto;
+		display: block;
+	}
+
+	.image {
+		display: none;
+		/* Hide large absolute image on small screens to prevent overlap */
+	}
+
+	.icons {
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.icons a {
+		position: static;
+		/* Remove absolute positioning */
+		margin: 0 15px;
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.info h1 {
+		font-size: 30px;
+	}
+
+	.navbar .logo {
+		height: 80px;
+	}
+}
